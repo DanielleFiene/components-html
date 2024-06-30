@@ -11,7 +11,8 @@ body {
 
 .navbar-list {
     display: flex;
-    list-style: none;.navbar {
+    list-style: none;
+    .navbar {
         background-color: #333;
         padding: 10px 20px;
     }
@@ -94,6 +95,17 @@ justify-content: flex-end;
 .navbar-list2 a:hover {
     background-color: #575757;
     border-radius: 4px;
+}
+
+/*navbar 3 with buttons*/
+.navbar-item3 {
+    margin: 0 15px;
+}
+
+.navbar-link3 {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
 }
 
 /* hoverable link 1 underline */
