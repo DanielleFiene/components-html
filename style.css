@@ -1,4 +1,4 @@
-/* navbar 1: horizontal navbar using flexbox */
+/* navbar 1: horizontal navbar left aligned using flexbox */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,9 +11,18 @@ body {
 
 .navbar-list {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;.navbar {
+        background-color: #333;
+        padding: 10px 20px;
+    }
+    
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 .navbar-item {
@@ -28,6 +37,61 @@ body {
 }
 
 .navbar-link:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* navbar 1: centering: 
+.navbar {
+justify-content: center;
+}
+
+navbar 1: to the right: 
+.navbar {
+justify-content: flex-end;
+}
+*/
+
+/* navbar 2: horizontal navbar with logo aligned using flexbox */
+
+.navbar2 {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo2 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-list2 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list2 li {
+    margin-left: 20px;
+}
+
+.navbar-list2 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-list2 a:hover {
     background-color: #575757;
     border-radius: 4px;
 }
